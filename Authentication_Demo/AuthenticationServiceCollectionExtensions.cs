@@ -12,7 +12,7 @@ namespace Authentication_Demo
 {
     public static class AuthenticationServiceCollectionExtensions
     {
-        public static void AddMicrosoftAuthenticaton(this IServiceCollection services, IConfiguration configuration)
+        public static void AddMicrosoftAuthentication(this IServiceCollection services, IConfiguration configuration)
         {
             var authentication = new AzureAdOption();
             configuration.Bind("AzureAd", authentication);
